@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Assistant:wght@400;500;600;700&family=Inter:wght@400;700&family=Open+Sans:ital@0;1&family=Roboto:ital@0;1&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="css/all.min.css"> 
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- dns bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+       <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container p-3">
+              <div class="d-flex">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo">
+                </a>
+                  <div class="text-white fs-6">
+                    <p class="fw-bold mb-1">Weather</p>
+                    <P class="thin">tagline goes here</P>
+                  </div>
+              </div>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item btn-outline-primary">
+                    <a class="nav-link active me-5 rounded-pill " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-5 rounded-pill" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-5 rounded-pill" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-3 rounded-pill" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-3 rounded-pill" href="#footer">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="home bg-primary py-5 ">
+            <div class="container">
+              <div class=" position-relative pb-5 my-5">
+                <input type="text" id="locatName" name="" placeholder="Enter your email to subscribe..." class="border-0 btn-outline-dark ps-3 py-3 w-100 m-auto rounded-pill bg-black text-secondary ">
+                <input type="submit" id="search" value="Find" class="btn px-5 py-2  btn-primary rounded-pill">
+                <P class="error text-danger ps-3">please, enter a valid city!</P>
+                </div>
+              </div>
+              </div>
+
+              <div class="dayes container-fluid py-5">
+                <div class="container rounded-2">
+                  <div class="row  text-white gx-0 rounded-5 ">
+
+                    <div class="col-md-4 first-day  ">
+                      <div class="head d-flex justify-content-between pt-2 px-2">
+                        <div class="">
+                          <p id="day-name" class="gray fw-light fs-6"></p>
+                        </div>
+                        <div class="d-flex gray fw-lighter fs-6">
+                          <p id="day-num"></p>
+                          <p id="month"></p>
+                        </div>
+                      </div>
+                      <div class="p-3">
+                        <p id="town" class=" fw-bold gray"></p>
+                        <div class="temp">
+                          <h1 id="temp" class="w-50 d-inline"></h1>
+                          <img id="picture"  src="" alt="icon" class="d-inline fs-1 w-25 align-middle mb-5">
+                        </div>
+                        <p id="condition" class="text-primary"></p>
+                          <img src="images/icon-umberella.png" alt="umbrella" class="me-3"> <span id="humidity" class="me-3">%</span>
+                          <img src="images/icon-wind.png" alt="compass"class="me-3"><span id="wind" class="me-3"></span>
+                          <img src="images/icon-compass.png" alt="compass" class="me-3"><span id="windDir" class="me-3">east</span>
+                      </div>        
+                      </div>
+                    
+                    <div class="col-md-4 second-day text-center">
+                      <div class="head d-flex justify-content-between pt-2 px-2">
+                        <div class="text-center w-100">
+                          <p id="day-name2" class="gray fw-light fs-6"></p>
+                        </div>
+                      </div>
+  
+                      <div class="text-center p-5 ">
+                        <img id="picture-two"  src="" alt="icon" class="mb-3" >
+                      <h2 id="temp2"></h2>
+                      <h6 id="temp2_min" class="gray mb-3"></h6>
+                      <p id="condition2" class="text-primary"></p>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 third-day text-center">
+                      <div class="head d-flex justify-content-between pt-2 px-2">
+                        <div class="text-center w-100">
+                          <p id="day-name3" class="gray fw-light fs-6"></p>
+                        </div>
+                      </div>
+                      <div class="text-center p-5 ">
+                        <img id="picture3"  src="" alt="icon"  class="mb-3">
+                      <h2 id="temp3"></h2>
+                      <h6 id="temp3_min" class="gray mb-3"></h6>
+                      <p id="condition3" class="text-primary"></p>
+
+                      </div>
+                    </div>
+  
+                </div>
+                </div>
+              
+                       
+          </div>
+       </header>
+
+       <footer class=" container-fluid py-5" id="footer">
+        <div class="row container m-auto">
+          <div class="col-md-8">
+            <form action="">
+              <input type="text" name="" placeholder="Enter your email to subscribe..." class="border-0 py-3 w-100 m-auto rounded-pill bg-black text-secondary ">
+              <input type="submit" value="Subscribe" class="btn px-3 py-2 btn-primary rounded-pill">
+                      </form>
+          </div>
+              <div class="col-md-3 col-md-offset-1">
+                <div class="social-links text-center d-flex">
+                  <a href="#" class=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class=""><i class="fa-brands fa-google-plus"></i></a>
+                  <a href="#" class=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="container">Copyright 2014 Company name. Designed by S.Salman. All rights reserved</p>
+       </footer>
+     
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <!-- dns bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

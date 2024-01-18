@@ -1,0 +1,101 @@
+body{
+    font-family: "Roboto", "Open Sans", sans-serif;
+    color: #bfc1c8 !important;
+}
+.navbar p.thin{
+    font-size: 10px;
+        color: #bfc1c8;
+
+}
+li a{
+    padding: 0 10px !important;
+    color: #fff !important;
+
+}
+li a.active,
+li a:hover{
+border: 2px solid #009ad8;
+color: #009ad8 !important;
+
+/* border-radius:5px; */
+}
+.gray{
+    color:#bfc1c8 !important;
+}
+.home{
+    background-image: url(../images/banner.png);
+    /* height: 60vh; */
+}
+.home .btn{
+    position: absolute;
+   right: 5px;
+   top: 5px; 
+   }
+.error{
+    display: none;
+   } 
+.dayes{
+    background-color: #1E202B;
+    /* height: 50vh; */
+    /* position: relative; */
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+.dayes .row{
+    /* position: absolute; */
+    margin-top: -150px ;
+    margin-bottom: 50px;
+    /* left: 0px; */
+    border-radius: 10px;
+}
+.dayes .head{
+    background: rgba(0, 0, 0, 0.1);
+}
+.dayes .row h1{
+    font-size: 75px;
+    font-weight: bold;
+    padding-right: 30px;
+}
+.dayes .row .second-day{
+    background-color: #262936;
+    /* margin-top: -50%; */
+}
+.row .first-day,
+.row .third-day{
+background-color: #323544;
+}
+
+
+footer{
+    background-color: #262936;
+    height: 100%;
+    /* height: 20vh; */
+}
+footer form{
+    position: relative;
+    margin-bottom: 30px;
+}
+footer form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+footer .social-links a {
+    text-decoration: none;
+}
+footer .social-links a i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 5px;
+
+    /* vertical-align: middle; */
+}
+footer p{
+    color: #bfc1c8;
+}
