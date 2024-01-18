@@ -24,12 +24,12 @@ let tempreture3=document.getElementById('temp3');
 let tempreture3_min=document.getElementById('temp3_min');
 let weathercondition3=document.getElementById('condition3');
 
-let apiKey='fa0f445ee099453b87b71751241701';
+// let apiKey='fa0f445ee099453b87b71751241701';
 
 async function getData(location){
     let date=new Date();
 
-    let response=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3&aqi=no&alerts=no`);
+    let response=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=fa0f445ee099453b87b71751241701&q=${location}&days=3&aqi=no&alerts=no`);
     let data=await response.json();
 
     if(response.status==400|| response.status==404||data.error){
