@@ -91,9 +91,9 @@ btnSearch.addEventListener('click',async function(){
     clear();
 })
 
-locationNameInput.addEventListener('keyup',async function(){
-    await getData(locationNameInput.value);
-    clear();
-})
+//// locationNameInput.addEventListener('keyup',async function(){
+//     await getData(locationNameInput.value);
+//     clear();
+// })
 
 
